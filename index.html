@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <main class="w-full min-h-screen flex flex-col">
+            <!-- header -->
+            <header class="flex justify-center items-center font-bold select-none w-full bg-black text-white text-3xl h-16 bg-black">
+                .Shortener
+            </header>
+
+            <!-- shortener form -->
+            <div class="w-full grow">
+                <div class="lg:w-6/12 sm:w-11/12 mx-auto w-full mt-10 p-4 pt-8 rounded-lg shadow-sm bg-gray-100 shadow-gray-300">
+                    <form onsubmit="return false;" class="w-full flex flex-col items-center mb-10">
+                        <input type="text" class="rounded w-full h-10 border border-gray-300 indent-2.5 focus:outline-none focus:border-blue-400" placeholder="Url">
+                        <button id="short-it" class="w-fit mt-2 p-2 px-4 rounded-lg display-block text-white bg-blue-400 hover:bg-blue-500 disabled:bg-gray-400">Shorten Url</button>
+                    </form>
+
+                    <div class="w-full flex items-center justify-center rounded-xl py-4 mb-5" id="result">
+                        <img src="loading.svg" class="w-6 __loading" >
+                    </div>
+
+                    <div class="w-full flex items-center justify-center rounded-xl py-4 mb-5 success" id="result">
+                        <span class="w-full lg:flex-row flex sm:flex-col mx-4">
+                            <input type="text" id="copy-this" class="sm:w-full lg:w-11/12 lg:mr-1 sm:mr-0 rounded-full border-[1px] border-solid border-gray-200 indent-5 focus:outline-none text-gray-500 sm:w-full sm:h-12 sm:m-0 sm:mb-2 lg:mb-0" value="https://sh.rt/h5d9s">
+                            <button id="copy-to-clipboard" class="sm:w-full lg:w-auto bg-green-600 ml-1 sm:m-0 cursor-pointer text-white border-none rounded-full cursor-pointer py-3 px-6 hover:bg-green-800 lg:h-auto">Copy</button>
+                        </span>
+                    </div>
+
+                    <div class="w-full flex items-center justify-center rounded-xl py-4 mb-5 error" id="result">
+                        <span class="w-full flex mx-4">An error occurred! Please try again..</span>
+                    </div>
+
+                    <div class="w-full flex items-center justify-center rounded-xl py-4 mb-5 warning" id="result">
+                        <span class="w-full flex mx-4">Invalid Url</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer class="w-full bg-gray-100 p-10 text-center mt-5">
+                Copyright &copy; 2022
+            </footer>
+        </main>
+    </body>
+</html>

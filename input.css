@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+
+@layer components {
+    .success {
+        background-color: #dcfce7;
+        color: #16a34a;
+    }
+
+    .error {
+        background-color: #ffe4e6;
+        color: #f43f5e;
+    }
+
+    .warning {
+        background-color: #fefce8;
+        color: #ca8a04;
+    }
+
+    .__loading {
+        animation: loading-loop 1.5s linear infinite;
+    }
+
+    @keyframes loading-loop {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+}
