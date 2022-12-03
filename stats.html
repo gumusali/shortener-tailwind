@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Redirect</title>
+    </head>
+    <body>
+        <main class="w-full min-h-screen flex flex-col">
+            <!-- header -->
+            <header class="flex justify-center items-center font-bold select-none w-full bg-black text-white text-3xl h-16 bg-black">
+                .Shortener
+            </header>
+
+            <!-- shortener form -->
+            <div class="w-full grow">
+                <div class="lg:w-6/12 sm:w-11/12 mx-auto w-full mt-10 p-4 rounded-lg shadow-sm bg-gray-100 shadow-gray-300">
+                    <span class="block w-full py-2 text-lg font-bold text-center">Stats</span>
+                    
+                    <div class="flex flex-col flex-wrap border-b-[1px] py-2 last:border-none">
+                        <div class="w-full inline font-bold">Url </div>
+                        <div class="w-full inline truncate">https://www.google.com</div>
+                        <div class="w-full sm:w-full ml-auto text-green-700 text-[13px] hover:underline cursor-pointer">Copy url</div>
+                    </div>
+
+                    <div class="flex flex-col border-b-[1px] py-2 last:border-none">
+                        <div class="w-full inline font-bold">Visited </div>
+                        <div class="w-full inline">16 times</div>
+                    </div>
+
+                    <div class="flex flex-col border-b-[1px] py-2 last:border-none">
+                        <div class="w-full inline font-bold">Created at </div>
+                        <div class="w-full inline">03 December 2022 16:57</div>
+                    </div>
+
+                    <div class="flex flex-col border-b-[1px] py-2 last:border-none">
+                        <div class="w-full inline font-bold">Delete </div>
+                        <div class="w-full inline">
+                            <a class="text-red-500 rounded-lg cursor-pointer hover:underline">Click to delete</a>
+                            <small>(Can't undo)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer class="w-full bg-gray-100 p-10 text-center mt-5">
+                Copyright &copy; 2022
+            </footer>
+        </main>
+    </body>
+</html>
